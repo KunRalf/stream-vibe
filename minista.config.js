@@ -77,7 +77,12 @@ export default defineConfig({
       localsConvention: "camelCaseOnly",
     },
     preprocessorOptions: {
-      scss: {},
+      scss: {
+        additionalData: `
+          @use '@/styles/helpers/index' as *;
+        `,
+        silenceDeprecations: ['legacy-js-api']
+      },
       less: {},
       stylus: {},
     },
