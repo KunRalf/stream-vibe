@@ -15,6 +15,7 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
         <option value="SCSS File" />
       </list>
     </option>
@@ -55,7 +56,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JavaScript&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2025.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -79,7 +80,12 @@
       <workItem from="1751110940548" duration="1986000" />
       <workItem from="1753184041360" duration="5581000" />
       <workItem from="1753308542123" duration="3815000" />
-      <workItem from="1753388407420" duration="5745000" />
+      <workItem from="1753388407420" duration="5941000" />
+      <workItem from="1753448887888" duration="4892000" />
+      <workItem from="1753710200392" duration="3604000" />
+      <workItem from="1753735267779" duration="4555000" />
+      <workItem from="1753741119326" duration="8197000" />
+      <workItem from="1753802585526" duration="1903000" />
     </task>
     <servers />
   </component>
