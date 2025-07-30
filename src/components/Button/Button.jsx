@@ -13,7 +13,8 @@ const Button = (props) => {
     iconName,
     // before | after
     iconPosition = 'before',
-    // '' (default) | 'transparent'
+    hasFillIcon,
+    // '' (default) | 'transparent' | 'black-10'
     mode = '',
 
   } = props;
@@ -28,6 +29,7 @@ const Button = (props) => {
     <Icon
       className="button__icon"
       name={iconName}
+      hasFill={hasFillIcon}
   />)
 
   return (
