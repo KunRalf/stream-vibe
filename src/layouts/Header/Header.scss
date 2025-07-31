@@ -14,9 +14,13 @@
   @keyframes scrolling-header {
     to {
       padding-block: 10px;
-      background-color: var(--color-black-08);
-      border-color: var(--color-black-15);
+      background-color: transparent;
+//      border-color: var(--color-black-15);
     }
+  }
+
+  &.is-fixed{
+    position: fixed;
   }
 
   &__inner {
@@ -64,7 +68,7 @@
 
   &__menu {
       border-radius: var(--border-radius-l);
-
+      background-color: var(--color-black-08);
     @include laptop {
       border-right: var(--border-radius-m);
     }
