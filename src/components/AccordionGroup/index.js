@@ -1,3 +1,3 @@
-import AccordionGroup from './AccordionGroup';
+import AccordionGroup from './AccordionGroup'
 
-export default AccordionGroup;
+export default AccordionGroup

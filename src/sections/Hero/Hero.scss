@@ -5,43 +5,34 @@
   padding-bottom: var(--section-padding-y);
   text-align: center;
 
-  @include mobile{
+  @include mobile {
     min-height: 639px;
   }
 
-  &__pano{
+  &__pano {
     --heroGradientColorStart: var(--color-black-08);
-    --heroGradientColorEnd: rgb(20 20 20 / 0);
-
-    --heroGradientHeight: 67.5%;
-
-    --heroGradientTop: linear-gradient(
-      to bottom,
-      var(--heroGradientColorStart) 0%,
-      var(--heroGradientColorEnd) 100%
-    ) 50% 0/100% var(--heroGradientHeight);
-
-    --heroGradientBottom: linear-gradient(
-        to top,
-        var(--heroGradientColorStart) 0%,
-        var(--heroGradientColorEnd) 100%
-    ) 50% 101%/100% var(--heroGradientHeight);;
+    --heroGradientColorEnd: transparent 67.5%;
 
     @include flex-center;
 
     flex-grow: 1;
-
     padding-top: fluid(195, 150);
-    padding-bottom: fluid(135, 150);
-
+    padding-bottom: fluid(131, 50);
     background:
-      var(--heroGradientTop),
-      var(--heroGradientBottom),
-      url(../../assets/images/hero/bg.png) 50%/cover;
-    background-repeat: no-repeat;
+      linear-gradient(
+        to bottom,
+        var(--heroGradientColorStart),
+        var(--heroGradientColorEnd)
+      ),
+      linear-gradient(
+        to top,
+        var(--heroGradientColorStart),
+        var(--heroGradientColorEnd)
+      ),
+      url('@/assets/images/hero/bg.png') 50%/cover;
   }
 
-  &__play-button{
+  &__play-button {
     @include square(fluid(470, 200));
 
     padding: 0;
@@ -49,16 +40,16 @@
     border: none;
   }
 
-  &-title{
+  &__title {
     margin-top: -0.5em;
     margin-bottom: fluid-to-laptop(14, 10);
   }
 
-  &__description{
+  &__description {
     margin-bottom: fluid(50, 30);
   }
 
-  &__body{
+  &__body {
     padding-bottom: fluid(50, 20);
   }
 }

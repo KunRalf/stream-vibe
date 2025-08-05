@@ -1,11 +1,15 @@
-export const metadata = {
-  title: "Movies & Shows",
-} ;
+import MoviesBanner from '@/sections/MoviesBanner'
+import Collections from '@/sections/Collections'
 
-export default function () {
+export const metadata = {
+  title: 'Movies & Shows',
+}
+
+export default () => {
   return (
     <>
-      <h1>Movies</h1>
+      <MoviesBanner />
+      <Collections />
     </>
-  );
+  )
 }

@@ -10,24 +10,38 @@
   animation-timeline: scroll();
   animation-range: 0 100px;
 
+  @mixin scrolling-header-styles {
+    padding-block: 10px;
+    background-color: var(--color-black-08);
+    border-color: var(--color-black-15);
+  }
 
   @keyframes scrolling-header {
     to {
-      padding-block: 10px;
-      background-color: transparent;
-//      border-color: var(--color-black-15);
+      @include scrolling-header-styles;
     }
   }
 
-  &.is-fixed{
+  @supports(not (animation-timeline: scroll())) {
+    @include scrolling-header-styles;
+
+    position: sticky !important;
+  }
+
+  &.is-fixed {
     position: fixed;
   }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     column-gap: 16px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__overlay-menu-dialog {
@@ -48,43 +62,45 @@
       display: contents;
     }
 
-    @mixin starting-styles{
+    @mixin starting-styles {
       opacity: 0;
       translate: 50%;
     }
 
-    &[open]{
-      display: flex;
+    @include tablet {
+      &[open] {
+        display: flex;
 
-      @starting-style {
+        @starting-style {
+          @include starting-styles;
+        }
+      }
+
+      &:not([open]) {
         @include starting-styles;
       }
-    }
-
-    &:not([open]){
-      @include starting-styles;
     }
   }
 
   &__menu {
-      border-radius: var(--border-radius-l);
-      background-color: var(--color-black-08);
+    border-radius: var(--border-radius-l);
+
     @include laptop {
-      border-right: var(--border-radius-m);
+      border-radius: var(--border-radius-m);
     }
 
-    @include tablet-above{
+    @include tablet-above {
       padding: fluid-to-laptop(10, 8);
-      border-color: var(--color-black-06);
-      outline: var(--border-radius-l) solid var(--color-black-12);
-
+      background-color: var(--color-black-06);
+      outline: var(--border-width-l) solid var(--color-black-12);
     }
 
-    @include tablet{
+    @include tablet {
       display: flex;
       justify-content: center;
       height: 100%;
       border-radius: 0;
+      overflow-y: auto;
     }
 
     &-list {
@@ -92,7 +108,7 @@
       align-items: center;
       column-gap: 6px;
 
-      @include tablet{
+      @include tablet {
         flex-direction: column;
         row-gap: 16px;
         margin-block: auto;
@@ -104,13 +120,13 @@
       color: var(--color-gray-75);
       border-radius: var(--border-radius-s);
 
+      @include tablet {
+        font-size: 20px;
+      }
+
       @include hover {
         color: var(--color-white);
         background-color: var(--color-red-60);
-      }
-
-      @include tablet{
-        font-size: 20px;
       }
 
       &.is-active {
@@ -119,18 +135,20 @@
         background-color: var(--color-black-10);
         pointer-events: none;
       }
-
     }
-
   }
 
   &__actions {
     display: flex;
     align-items: center;
     column-gap: 10px;
+
+    @include tablet-above {
+      justify-content: end;
+    }
   }
-  
-  &__burger-button{
+
+  &__burger-button {
     position: relative;
   }
 }

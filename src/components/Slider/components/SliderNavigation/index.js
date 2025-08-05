@@ -1,3 +1,3 @@
-import SliderNavigation from './SliderNavigation';
+import SliderNavigation from './SliderNavigation'
 
-export default SliderNavigation;
+export default SliderNavigation

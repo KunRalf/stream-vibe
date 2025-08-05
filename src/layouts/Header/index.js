@@ -1,3 +1,3 @@
-import Header from "@/layouts/Header/Header";
+import Header from './Header'
 
-export default Header;
+export default Header

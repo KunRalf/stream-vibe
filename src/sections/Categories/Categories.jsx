@@ -1,17 +1,11 @@
-import './Categories.scss';
-import classNames from 'classnames';
-import Section from "@/layouts/Section";
-import CategoryCard from "@/components/CategoryCard";
-import Slider from "@/components/Slider";
-import SliderNavigation from "@/components/Slider/components/SliderNavigation";
-import categoryItems from "@/sections/Categories/categoryItems";
+import Section from '@/layouts/Section'
+import CategoryCard from '@/components/CategoryCard'
+import Slider from '@/components/Slider'
+import SliderNavigation from '@/components/Slider/components/SliderNavigation'
+import categoryItems from './categoryItems'
 
-const Categories = (props) => {
-
-  const sliderNavigationId = "categories-slider-navigation";
-  const {
-    className,
-  } = props;
+const Categories = () => {
+  const sliderNavigationId = 'categories-slider-navigation'
 
   return (
     <Section
@@ -19,10 +13,10 @@ const Categories = (props) => {
       titleId="categories-title"
       description="Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn something new"
       actions={(
-       <SliderNavigation
-         mode="tile"
-         id={sliderNavigationId}
-       />
+        <SliderNavigation
+          mode="tile"
+          id={sliderNavigationId}
+        />
       )}
       isActionsHiddenOnMobile
     >
@@ -38,7 +32,7 @@ const Categories = (props) => {
         ))}
       </Slider>
     </Section>
-  );
+  )
 }
 
-export default Categories;
+export default Categories

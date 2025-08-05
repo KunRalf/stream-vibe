@@ -1,3 +1,3 @@
-import DeviceCard from './DeviceCard';
+import DeviceCard from './DeviceCard'
 
-export default DeviceCard;
+export default DeviceCard

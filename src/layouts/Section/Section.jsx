@@ -1,5 +1,5 @@
-import './Section.scss';
-import classNames from 'classnames';
+import './Section.scss'
+import classNames from 'classnames'
 
 const Section = (props) => {
   const {
@@ -10,12 +10,12 @@ const Section = (props) => {
     actions,
     isActionsHiddenOnMobile = false,
     children,
-  } = props;
+  } = props
 
   return (
-    <div
+    <section
       className={classNames(className, 'section container')}
-      aria-label={titleId}
+      aria-labelledby={titleId}
     >
       <header className="section__header">
         <div className="section__info">
@@ -29,9 +29,11 @@ const Section = (props) => {
           )}
         </div>
         {actions && (
-          <div className={classNames('section__actions', {
-            'hidden-mobile' : isActionsHiddenOnMobile
-          })}>
+          <div
+            className={classNames('section__actions', {
+              'hidden-mobile': isActionsHiddenOnMobile,
+            })}
+          >
             {actions}
           </div>
         )}
@@ -39,8 +41,8 @@ const Section = (props) => {
       <div className="section__body">
         {children}
       </div>
-    </div>
-  );
+    </section>
+  )
 }
 
-export default Section;
+export default Section
