@@ -16,7 +16,7 @@ const Button = (props) => {
     hasFillIcon,
     // '' (default) | 'transparent' | 'black-10'
     mode = '',
-
+    extraAttrs,
   } = props;
 
   const isLink = href !== undefined;
@@ -40,6 +40,7 @@ const Button = (props) => {
       title={title}
       aria-label={title}
       {...specificProps}
+      {...extraAttrs}
     >
       {iconPosition === 'before' && iconComponent}
       {!isLabelHidden && (

@@ -4,55 +4,10 @@ import Section from "@/layouts/Section";
 import CategoryCard from "@/components/CategoryCard";
 import Slider from "@/components/Slider";
 import SliderNavigation from "@/components/Slider/components/SliderNavigation";
+import categoryItems from "@/sections/Categories/categoryItems";
 
 const Categories = (props) => {
-  const categoryItems = [
-    {
-      title: 'Action',
-      images: [
-        '/src/assets/images/categories/action/1.jpg',
-        '/src/assets/images/categories/action/2.jpg',
-        '/src/assets/images/categories/action/3.jpg',
-        '/src/assets/images/categories/action/4.jpg',
-      ],
-    },
-    {
-      title: 'Adventure',
-      images: [
-        '/src/assets/images/categories/action/1.jpg',
-        '/src/assets/images/categories/action/2.jpg',
-        '/src/assets/images/categories/action/3.jpg',
-        '/src/assets/images/categories/action/4.jpg',
-      ],
-    },
-    {
-      title: 'Comedy',
-      images: [
-        '/src/assets/images/categories/action/1.jpg',
-        '/src/assets/images/categories/action/2.jpg',
-        '/src/assets/images/categories/action/3.jpg',
-        '/src/assets/images/categories/action/4.jpg',
-      ],
-    },
-    {
-      title: 'Drama',
-      images: [
-        '/src/assets/images/categories/action/1.jpg',
-        '/src/assets/images/categories/action/2.jpg',
-        '/src/assets/images/categories/action/3.jpg',
-        '/src/assets/images/categories/action/4.jpg',
-      ],
-    },
-    {
-      title: 'Horror',
-      images: [
-        '/src/assets/images/categories/action/1.jpg',
-        '/src/assets/images/categories/action/2.jpg',
-        '/src/assets/images/categories/action/3.jpg',
-        '/src/assets/images/categories/action/4.jpg',
-      ],
-    },
-  ]
+
   const sliderNavigationId = "categories-slider-navigation";
   const {
     className,
@@ -73,6 +28,7 @@ const Categories = (props) => {
     >
       <Slider
         navigationTargetElementId={sliderNavigationId}
+        isBeyondTheViewportOnMobileS
       >
         {categoryItems.map((categoryItem, index) => (
           <CategoryCard

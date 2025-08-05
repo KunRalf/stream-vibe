@@ -15,11 +15,11 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JSX File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
         <option value="JSX Component Folder with styles.jsx.child.0" />
         <option value="JSX Component Folder with styles.jsx.child.1" />
         <option value="JSX Component Folder with styles" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,6 +38,9 @@
     &quot;accountId&quot;: &quot;47a934a2-a8c7-416d-82bd-9b7599ffdd22&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/node_modules/classnames/index.d.ts" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -60,7 +63,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.JavaScript",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -97,7 +100,8 @@
       <workItem from="1753914902419" duration="4801000" />
       <workItem from="1753963851622" duration="2261000" />
       <workItem from="1753991282263" duration="1071000" />
-      <workItem from="1753998213477" duration="9390000" />
+      <workItem from="1753998213477" duration="9984000" />
+      <workItem from="1754345233784" duration="6561000" />
     </task>
     <servers />
   </component>
@@ -110,7 +114,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/CategoryCard/CategoryCard.jsx</url>
           <line>6</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
