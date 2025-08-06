@@ -1,27 +1,28 @@
-import './Grid.scss';
-import classNames from 'classnames';
+import './Grid.scss'
+import classNames from 'classnames'
 
 const Grid = (props) => {
   const {
-    className,
     columns = 1,
-    children
-  } = props;
+    children,
+  } = props
 
   return (
-   <ul className={classNames('grid', {
-     [`grid--${columns}`]: columns > 1,
-   })}>
-     {children.map((child, index) => (
-       <li
-        className="grid__item"
-        key={index}
-       >
-         {child}
-       </li>
-     ))}
-   </ul>
-  );
+    <ul
+      className={classNames('grid', {
+        [`grid--${columns}`]: columns > 1,
+      })}
+    >
+      {children.map((child, index) => (
+        <li
+          className="grid__item"
+          key={index}
+        >
+          {child}
+        </li>
+      ))}
+    </ul>
+  )
 }
 
-export default Grid;
+export default Grid

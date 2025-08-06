@@ -1,5 +1,5 @@
-:root{
-  --color-white: #ffffff;
+:root {
+  --color-white: #FFFFFF;
   --color-black: #000000;
 
   --color-red-45: #E50000;
@@ -44,8 +44,10 @@
 
   --font-family-base: 'Manrope', sans-serif;
 
-  --container-width: #{fluid-to-laptop($container-desktop-width, $container-laptop-width)};
-
+  --container-width: #{fluid-to-laptop(
+    $container-desktop-width,
+    $container-laptop-width
+  )};
   --container-padding-x: 16px;
 
   --section-padding-y: #{fluid(75, 40)};

@@ -1,17 +1,12 @@
-import './CategoryCard.scss';
-import classNames from 'classnames';
-import {Image} from "minista";
-import Icon from "@/components/Icon/Icon";
+import './CategoryCard.scss'
+import { Image } from 'minista'
+import Icon from '@/components/Icon'
 
 const CategoryCard = (props) => {
   const {
-    className,
     title,
-    images = [
-      
-    ],
-
-  } = props;
+    images = [],
+  } = props
 
   return (
     <a className="category-card" href="/movies">
@@ -34,7 +29,7 @@ const CategoryCard = (props) => {
         />
       </div>
     </a>
-  );
+  )
 }
 
-export default CategoryCard;
+export default CategoryCard

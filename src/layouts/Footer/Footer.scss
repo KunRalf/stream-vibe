@@ -1,7 +1,7 @@
-.footer{
+.footer {
   background-color: var(--color-black-06);
 
-  &__menu{
+  &__menu {
     --footerMenuColumns: 6;
 
     display: grid;
@@ -10,22 +10,22 @@
     padding-block: fluid(100, 50);
     border-bottom: var(--border);
 
-    @include laptop{
+    @include laptop {
       --footerMenuColumns: 3;
     }
 
-    @include mobile{
+    @include mobile {
       --footerMenuColumns: 2;
     }
 
-    &-column{
+    &-column {
       display: flex;
       flex-direction: column;
       align-items: start;
-      row-gap: fluid(24,16);
+      row-gap: fluid(24, 16);
     }
 
-    &-list{
+    &-list {
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -33,7 +33,7 @@
     }
   }
 
-  &__extra{
+  &__extra {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,13 +41,9 @@
     padding-top: fluid-to-laptop(24, 20);
     padding-bottom: fluid(50, 20);
 
-    @include mobile{
+    @include mobile {
       flex-direction: column;
       row-gap: 20px;
-    }
-
-    &-links{
-      row-gap: 10px;
     }
   }
 }

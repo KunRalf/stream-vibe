@@ -1,12 +1,13 @@
-import './Logo.scss';
-import classNames from "classnames";
+import './Logo.scss'
+import classNames from 'classnames'
 
 const Logo = (props) => {
   const {
     className,
     loading = 'lazy',
-  } = props;
-  const title = 'Home';
+  } = props
+
+  const title = 'Home'
 
   return (
     <a
@@ -23,8 +24,9 @@ const Logo = (props) => {
         height={60}
         loading={loading}
       />
-    </a>
-  );
-};
 
-export default Logo;
+    </a>
+  )
+}
+
+export default Logo

@@ -1,27 +1,26 @@
-class OverlayMenu{
+class OverlayMenu {
   selectors = {
-    root : '[data-js-overlay-menu]',
-    dialog : '[data-js-overlay-menu-dialog]',
-    burgerButton : '[data-js-overlay-menu-burger-button]',
+    root: '[data-js-overlay-menu]',
+    dialog: '[data-js-overlay-menu-dialog]',
+    burgerButton: '[data-js-overlay-menu-burger-button]',
   }
 
   stateClasses = {
     isActive: 'is-active',
-    isLock: 'is-lock'
-  }
-
-  onBurgerButtonClick = () => {
-    this.burgerButtonElement.classList.toggle(this.stateClasses.isActive);
-    this.dialogElement.open = !this.dialogElement.open;
-    document.documentElement.classList.toggle(this.stateClasses.isLock);
+    isLock: 'is-lock',
   }
 
   constructor() {
-    this.rootElement = document.querySelector(this.selectors.root);
-    this.dialogElement = this.rootElement.querySelector(this.selectors.dialog);
-    this.burgerButtonElement = this.rootElement.querySelector(this.selectors.burgerButton);
-    this.bindEvents();
+    this.rootElement = document.querySelector(this.selectors.root)
+    this.dialogElement = this.rootElement.querySelector(this.selectors.dialog)
+    this.burgerButtonElement = this.rootElement.querySelector(this.selectors.burgerButton)
+    this.bindEvents()
+  }
 
+  onBurgerButtonClick = () => {
+    this.burgerButtonElement.classList.toggle(this.stateClasses.isActive)
+    this.dialogElement.open = !this.dialogElement.open
+    document.documentElement.classList.toggle(this.stateClasses.isLock)
   }
 
   bindEvents() {
@@ -29,4 +28,4 @@ class OverlayMenu{
   }
 }
 
-export default OverlayMenu;
+export default OverlayMenu

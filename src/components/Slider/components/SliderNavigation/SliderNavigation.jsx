@@ -1,15 +1,17 @@
-import './SliderNavigation.scss';
-import classNames from 'classnames';
-import Button from "@/components/Button";
+import './SliderNavigation.scss'
+import classNames from 'classnames'
+import Button from '@/components/Button'
 
 const SliderNavigation = (props) => {
   const {
     className,
     id,
     hasPagination = true,
-    // '' (default) | 'tile'
+    /**
+     * '' (default) | 'tile'
+     */
     mode = '',
-  } = props;
+  } = props
 
   return (
     <div
@@ -46,7 +48,7 @@ const SliderNavigation = (props) => {
         }}
       />
     </div>
-  );
+  )
 }
 
-export default SliderNavigation;
+export default SliderNavigation
