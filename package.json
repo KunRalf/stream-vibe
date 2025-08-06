@@ -1,5 +1,6 @@
 {
   "name": "minista-project",
+  "homepage": "https://kunralf.github.io/stream-vibe",
   "private": true,
   "type": "module",
   "scripts": {
